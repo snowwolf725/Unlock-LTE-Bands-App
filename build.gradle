@@ -22,13 +22,3 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
-android {
-    signingConfigs {
-        release {
-            storeFile file("AndroidApp.jks")
-            storePassword System.getenv("KEYSTORE_PASS")
-            keyAlias System.getenv("ALIAS_NAME")
-            keyPassword System.getenv("ALIAS_PASS")
-        }
-    }
-}
