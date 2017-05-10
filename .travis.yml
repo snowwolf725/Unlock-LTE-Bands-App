@@ -1,9 +1,5 @@
 language: android
 jdk: oraclejdk8
-env:
-  global:
-    - GH_REF: github.com/snowwolf725/Unlock-LTE-Bands-App.git
-    - secure: Qz2INaJeRFvIFI9LBlA2iMG85cPol1uaM8/5v3RnQfoFk2pgMRdINx3kPRq9KztVTCMWzjZBnrLmYfQHB2RhVK1G0WiRYZv/6KyQBFVpAtemlwP2bOmv4LmsP8QsOVnRblPS9VB6xQsziU8uK0lTFdZUXAcpp2IvfcI0S4d+4qhVsv+RtrsxSMdUHSpnJQa/BiKRRahmJdV7mZGe20+wEXTqXRX0WgY3IcQ7clywUD9M9gzb0mNTHnM0An5s4NpkHLoSak3GL1QN8/VUv7CLE+VoCNS0kGWjH5kAHLCzUkvXOtcwqjFpJxdOeQ9j68hfQdzjMFEyFQW1y5S5AQ4Rm0vQx35MGvmgDxcfEKmSoWBVhOHycsFYbeyK5xRj4Z/Q1GZI5inWRopdgp03SSmCNtnWVYDTdHBUV7+/gTKEkx4G2r0VTagGBDjOE4B8uORujonz/hkhKnXXsC10A+bNOBIjy2vPTkrSt6DwFzzEr1rr9Y54shjy5WM722y3/hJb2a7UF3kn77fKzHJXcIg0TORgG/Pspzcz+MtgjSxzf7bDUElwPokDHKEsSw76QDsaSPSmvKeIfobX9vIGE041K18CM1lDesrY5vTrPycf2crmkS2Emi6HXwT7J0d1MDqZH+lKpwk6esFe6hFtlS3dMid+lPJKtYEEvH2ebytnqiU=
 android:
   components:
     - tools
@@ -17,6 +13,8 @@ script:
   - ./gradlew assembleRelease
 deploy:
   provider: releases
+  api_key:
+    secure: B4x7yGSqudgPvhq8yFFssMBXES6NHPk9JhHTMEHSjpVbbzuVDHONiD29i9q7D60PQrJIasUI21uqzX+UPSe5BjOT82kuaUIR3r9VDXZN5tCDiAMt/CyTs/Xo2F2GcY5cLstpOdn+tnfpNUAaqnleumLvSUUImIT9Ee3kqafXgzlzCXpEvjrqiuMg6qoI8Kn6/kLD0LveKpehzn0Bjk7PjhhvsLu8MtHhlL01UuO21sM+zqDa/5XN2UM6+vci3o3ebOCEBA46jx47caQ67WwKPXqYG3zveEmo1Hdad10JJygM38imsv8hh4CA14yk2h/i10bx95vtBW1LqBAjB/5kmLHdRfkPrlN+Kxo70ENqqnDdvSVxGWQgodL7lxUnT6IlV5DopbRCTYMxaS9J7boYdAbzYwR5MpYLjgwq9jYg2HIhgobldd74zyDGG6C/4MIvTKLEso+LzvIDZMBgCA+rCbzGDHu9dnQHM/yBwmurvXwOKXfFP+NrXNi+WqClyOKyyTiwmZ3h3lRsITXrhTUq9+HKMxoFzFCraU/N7PBHqfY0R55TnMWOSvuud5CmA3AuXB2V+7M5V0xSqBrc/Q2Zb91rijVZCXJsD/Ll+cP3ey0PznVJw+rZponmZmHWNBdtLYErfARpVjv1CSmsCSvu3Nk3Axi3dTvV/+vW/Up+cr8=
   file: app/build/outputs/apk/app-release.apk
   skip_cleanup: true
   github_token: $GH_TOKEN
