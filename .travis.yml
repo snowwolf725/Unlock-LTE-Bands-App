@@ -1,4 +1,5 @@
 language: android
+jdk: oraclejdk8
 android:
   components:
     - build-tools-25.0.2
@@ -8,3 +9,11 @@ android:
 script:
   - chmod a+x gradlew
   - ./gradlew assembleRelease
+deploy:
+  provider: releases
+  api_key:
+    secure: PDDi+F6G5dm5FAlAYZ0BHqHP+CaYJqPHQvkLRcbTrfiBFnIZMDLpToBmrqAI71IkIBDIkp24Ew8pBJ/L9z8Y3jYhUYjW/BAo+oXKOS6TbEKSKUZP5IuuJvgZ769lh9jz3Ws0kWIqA+He3ntGN65yz+gUT5DaMnHrCkgLasSRJVYhorlErtUG5RTQsPy2meLMTNE1IuL2WZKmF1bJVM253ZlRt5ow9Lmi+FdlmyFbdZVBkubeBuZjGm+dUqFuNHAve/V2qcvp+qwoP0C0UJHwIJ0tmb8qPpnqBcZJE2mHiezPZPKcLla51PN3uO33AkmrLCdzCeops6RJd+KZC2z54Y+rimKU4u80Taccvd6uwH/x/tKzsp74wIYk2Ap6sVciTRpJ6H1xB5EeRtsDLCdM/avCN2mXCV9N+Pwp+32hq7yN7+q5Yk6XyUMsEg6w3zVAwTDEGai8Q5p1+1SvJT7qpQKbpu7pDtmgQcQbrt0amazg76UhdDXAThhBQMGMYLryy3Si1hSLJ+vz8wNTV7P9riFeX4a+H8qHnNyTiueMoDCR3QPl0+JhJYMkvJso6NA1eYkTG+8xhgNWOgZ2L/YT63IcjuBPG4AbxXv55RvGBdZ0nYn6nd6Is+f/3g2jBPJJWiNnimB8WHr5eLNdr8JCiSAYdKPDN2Jhqs/d10AFxb4=
+  file: app/build/outputs/apk/app-release.apk
+  skip_cleanup: true
+  on:
+    tags: true
