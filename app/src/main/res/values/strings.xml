@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Unlock OnePlus 3/3T LTE Bands</string>
+    <string name="app_version">App Version: 20170501</string>
+    <string name="system_version">System Version:</string>
+    <string name="enable_rmt_patch">Enable rmt_storage Patch</string>
+    <string name="rmt_status">rmt_storage Status:</string>
+    <string name="status_stock">Stock</string>
+    <string name="status_patched">Patched</string>
+    <string name="status_error">Error</string>
+    <string name="enable">Enable</string>
+    <string name="disable">Disable</string>
+    <string name="qualDiagMode">Qualcomm diagnostics mode</string>
+    <string name="btn_setting_enable">Enable Qualcomm diagnostics mode</string>
+    <string name="btn_setting_disable">Disable Qualcomm diagnostics mode</string>
+    <string name="backup_exist">Backup exist!</string>
+    <string name="backup_not_exist">Backup not found!</string>
+    <string name="backup_restore">Restore Backup File!</string>
+
+    <string name="reboot_dialog_title">Reboot Dialog</string>
+    <string name="reboot_dialog_msg">You need reboot your phone after change the settings.\nAre you sure you want to reboot?</string>
+    <string name="reboot_dialog_yes">Yes</string>
+    <string name="reboot_dialog_no">No</string>
+    <string name="btn_update_settings">Update Modem Settings</string>
+</resources>

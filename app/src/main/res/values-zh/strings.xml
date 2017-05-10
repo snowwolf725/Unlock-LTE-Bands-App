@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Unlock OnePlus 3/3T LTE Bands</string>
+    <string name="app_version">App 版本: 20170501</string>
+    <string name="backup_exist">備份檔存在</string>
+    <string name="backup_not_exist">備份不存在</string>
+    <string name="backup_restore">恢復備份</string>
+    <string name="btn_setting_disable">關閉診斷模式</string>
+    <string name="btn_setting_enable">啟用診斷模式</string>
+    <string name="disable">關閉</string>
+    <string name="enable">啟用</string>
+    <string name="qualDiagMode">診斷模式</string>
+    <string name="reboot_dialog_msg">你需要重新啟動手機讓設定生效, 現在要立刻重新啟動嗎?</string>
+    <string name="reboot_dialog_no">不要</string>
+    <string name="reboot_dialog_title">是否重新啟動</string>
+    <string name="reboot_dialog_yes">立即重新啟動</string>
+    <string name="rmt_status">rmt_storage 狀態:</string>
+    <string name="status_error">錯誤</string>
+    <string name="status_patched">已套用修正</string>
+    <string name="status_stock">官方</string>
+    <string name="system_version">系統版本:</string>
+    <string name="enable_rmt_patch">啟用 rmt_storage 修正</string>
+    <string name="btn_update_settings">更新數據機設定</string>
+</resources>
