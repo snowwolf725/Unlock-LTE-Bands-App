@@ -6,4 +6,5 @@ android:
     - extra-android-m2repository
     - extra-android-support
 script:
+  - chmod a+x gradlew
   - ./gradlew assembleRelease
