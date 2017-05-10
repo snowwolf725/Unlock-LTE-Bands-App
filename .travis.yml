@@ -3,7 +3,7 @@ jdk: oraclejdk8
 env:
   global:
     - GH_REF: github.com/snowwolf725/Unlock-LTE-Bands-App.git
-    - secure: "ztX8kF9ilfttfu24r2khs48r3Qvb2gv0JN8w5/CxqK84CCQI1JxdsGDiFusoUvtnFVdHflWl493a0fmNs6xouT/ykSm4eGomj5Cy1F1ndizw0fCyhwiPm6504DG+YubE+Q9JZunUR8uPKVRsWCJJOQFJ4gIyTzXU4Oe0rAZ1KLuMXZse8IJ91HOZk2r3jcj+Iq0/QXsCklPd9yifoKSZiTG7FDCt4/5EXDMQAVyveKzjq38ZOAj7B5rY37J6gHBz60r1XoNDBX/M5KQV5kJgl5rJBtVSd96TxdvGHnEl0+zgsPITSxRddiStbECr4lvAYD/z4tRejktt+i2FNMyMvrXzbTuwByBA5zHk2zo6jBjGYARN5pwLEPah+BoTTYp8lv6/qpRvAim75CLm9HpPxpdNqAPDLrpWv2SsDXzkD53t7yKD8cpxsYOmcMD7P3iPufIzABXWBpx3OVceGLH5/4wmgLb6RJzX7oUjo7Ox9dLcxrwB54Hl3/0MJqvxEZEcOlxCG+WycIfPSde76W7gjQ+yiPHbp0Uf8UTKKikOSvc6kqaodYk6ROULoSyHTH4B3XFvOpbyuFpUO5aIevy+2koamfmrrwERBDzQS8k+LTNHFRq9TsvE5sSB/7XJC4vhV0ai1N4DbRPbluEw1Uo1qmN0h1Ja/5AVGpU3YhqCR0E="
+    - secure: Qz2INaJeRFvIFI9LBlA2iMG85cPol1uaM8/5v3RnQfoFk2pgMRdINx3kPRq9KztVTCMWzjZBnrLmYfQHB2RhVK1G0WiRYZv/6KyQBFVpAtemlwP2bOmv4LmsP8QsOVnRblPS9VB6xQsziU8uK0lTFdZUXAcpp2IvfcI0S4d+4qhVsv+RtrsxSMdUHSpnJQa/BiKRRahmJdV7mZGe20+wEXTqXRX0WgY3IcQ7clywUD9M9gzb0mNTHnM0An5s4NpkHLoSak3GL1QN8/VUv7CLE+VoCNS0kGWjH5kAHLCzUkvXOtcwqjFpJxdOeQ9j68hfQdzjMFEyFQW1y5S5AQ4Rm0vQx35MGvmgDxcfEKmSoWBVhOHycsFYbeyK5xRj4Z/Q1GZI5inWRopdgp03SSmCNtnWVYDTdHBUV7+/gTKEkx4G2r0VTagGBDjOE4B8uORujonz/hkhKnXXsC10A+bNOBIjy2vPTkrSt6DwFzzEr1rr9Y54shjy5WM722y3/hJb2a7UF3kn77fKzHJXcIg0TORgG/Pspzcz+MtgjSxzf7bDUElwPokDHKEsSw76QDsaSPSmvKeIfobX9vIGE041K18CM1lDesrY5vTrPycf2crmkS2Emi6HXwT7J0d1MDqZH+lKpwk6esFe6hFtlS3dMid+lPJKtYEEvH2ebytnqiU=
 android:
   components:
     - tools
@@ -19,5 +19,6 @@ deploy:
   provider: releases
   file: app/build/outputs/apk/app-release.apk
   skip_cleanup: true
+  github_token: $GH_TOKEN
   on:
     tags: true
