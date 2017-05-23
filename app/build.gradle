@@ -23,6 +23,14 @@ android {
     }
     productFlavors {
     }
+    signingConfigs {
+        release {
+            storeFile file("AndroidApp.jks")
+            storePassword System.getenv("KEYSTORE_PASS")
+            keyAlias System.getenv("ALIAS_NAME")
+            keyPassword System.getenv("ALIAS_PASS")
+        }
+    }
 }
 
 dependencies {
