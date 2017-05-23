@@ -81,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
     }
 
-
     @Override
     protected void onResume() {
         super.onResume();
@@ -100,13 +99,16 @@ public class MainActivity extends AppCompatActivity {
             backupStatus = getString(R.string.backup_exist);
         }
         Button btn_setting = (Button)findViewById(R.id.btn_usbSetting);
+        Button btn_setting2 = (Button)findViewById(R.id.btn_usbSetting2);
         String diagModeStatus = "";
         if(check.isDiagEnable()) {
             diagModeStatus = getString(R.string.qualDiagMode) + ": " + getString(R.string.enable) + "\n ";
             btn_setting.setText(getString(R.string.btn_setting_disable));
+            btn_setting2.setText(getString(R.string.btn_setting2_disable));
         } else {
             diagModeStatus = getString(R.string.qualDiagMode) + ": " + getString(R.string.disable) + "\n ";
             btn_setting.setText(getString(R.string.btn_setting_enable));
+            btn_setting2.setText(getString(R.string.btn_setting2_enable));
         }
         Switch togglebutton = (Switch) findViewById(R.id.swt_patch);
         togglebutton.setEnabled(false);
@@ -137,6 +139,21 @@ public class MainActivity extends AppCompatActivity {
             EnableDiagMode diag = new EnableDiagMode();
             diag.execute();
             btn_setting.setText(getString(R.string.btn_setting_disable));
+        }
+        updateMessage();
+    }
+
+    public void onOpenUsbSetting2BtnClick(View _view) {
+        Button btn_setting = (Button)findViewById(R.id.btn_usbSetting2);
+        FileCheck check = new FileCheck(MainActivity.this.getFilesDir().getAbsolutePath());
+        if(check.isDiagEnable()) {
+            DisableDiagMode disable = new DisableDiagMode();
+            disable.execute();
+            btn_setting.setText(getString(R.string.btn_setting2_enable));
+        } else {
+            EnableDiagMode2 diag = new EnableDiagMode2();
+            diag.execute();
+            btn_setting.setText(getString(R.string.btn_setting2_disable));
         }
         updateMessage();
     }

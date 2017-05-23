@@ -5,8 +5,8 @@
     <string name="backup_exist">備份檔存在</string>
     <string name="backup_not_exist">備份不存在</string>
     <string name="backup_restore">恢復備份</string>
-    <string name="btn_setting_disable">關閉診斷模式</string>
-    <string name="btn_setting_enable">啟用診斷模式</string>
+    <string name="btn_setting_disable">關閉診斷模式(方法一)</string>
+    <string name="btn_setting_enable">啟用診斷模式(方法一)</string>
     <string name="disable">關閉</string>
     <string name="enable">啟用</string>
     <string name="qualDiagMode">診斷模式</string>
@@ -21,4 +21,6 @@
     <string name="system_version">系統版本:</string>
     <string name="enable_rmt_patch">啟用 rmt_storage 修正</string>
     <string name="btn_update_settings">更新數據機設定</string>
+    <string name="btn_setting2_disable">關閉診斷模式(方法二)</string>
+    <string name="btn_setting2_enable">啟用診斷模式(方法二)</string>
 </resources>

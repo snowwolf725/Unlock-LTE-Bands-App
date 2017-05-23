@@ -10,8 +10,8 @@
     <string name="enable">Enable</string>
     <string name="disable">Disable</string>
     <string name="qualDiagMode">Qualcomm diagnostics mode</string>
-    <string name="btn_setting_enable">Enable Qualcomm diagnostics mode</string>
-    <string name="btn_setting_disable">Disable Qualcomm diagnostics mode</string>
+    <string name="btn_setting_enable">Enable Qualcomm diagnostics mode (Method 1)</string>
+    <string name="btn_setting_disable">Disable Qualcomm diagnostics mode (Method 1)</string>
     <string name="backup_exist">Backup exist!</string>
     <string name="backup_not_exist">Backup not found!</string>
     <string name="backup_restore">Restore Backup File!</string>
@@ -21,4 +21,6 @@
     <string name="reboot_dialog_yes">Yes</string>
     <string name="reboot_dialog_no">No</string>
     <string name="btn_update_settings">Update Modem Settings</string>
+    <string name="btn_setting2_disable">Disable Qualcomm diagnostics mode (Method 2)</string>
+    <string name="btn_setting2_enable">Enable Qualcomm diagnostics mode (Method 2)</string>
 </resources>

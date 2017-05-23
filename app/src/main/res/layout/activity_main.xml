@@ -14,13 +14,25 @@
         android:id="@+id/btn_usbSetting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="37dp"
+        android:layout_below="@+id/swt_patch"
+        android:layout_marginTop="43dp"
         android:onClick="onOpenUsbSettingBtnClick"
         android:text="@string/btn_setting_enable"
         android:textAllCaps="false"
-        android:layout_below="@+id/swt_patch"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btn_usbSetting2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_usbSetting"
+        android:layout_marginTop="27dp"
+        android:onClick="onOpenUsbSetting2BtnClick"
+        android:text="@string/btn_setting2_enable"
+        android:textAllCaps="false" />
 
     <TextView
         android:id="@+id/txt_msg"
