@@ -12,4 +12,4 @@ pipeline:
     environment:
       - ANDROID_TARGET=android-24
       - ANDROID_ABI=armeabi-v7a
-- LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu/:/opt/android-sdk-linux/tools/lib64/gles_mesa/
+      - LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu/:/opt/android-sdk-linux/tools/lib64/gles_mesa/
